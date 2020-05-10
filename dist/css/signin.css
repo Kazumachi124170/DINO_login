@@ -1,3 +1,22 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: white; }
+
+@font-face {
+  font-family: 'Gen-M';
+  src: url("../res/fonts/GenJyuuGothic-P-Medium.ttf"); }
+
+@font-face {
+  font-family: 'Gen-N';
+  src: url("../res/fonts/GenJyuuGothic-P-Normal.ttf"); }
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url("../res/fonts/HelveticaNowDisplay-ExtBlk.ttf"); }
+
 html {
   position: fixed;
   height: 100vh;
@@ -144,3 +163,148 @@ body {
   right: -20vw;
   top: 28vh;
   z-index: 1; }
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@-moz-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@-ms-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@-webkit-keyframes fadeout {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+
+@-moz-keyframes fadeout {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+
+@-ms-keyframes fadeout {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+
+@keyframes fadeout {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+
+.fadeout {
+  -webkit-animation: fadeout;
+  -moz-animation: fadeout;
+  -o-animation: fadeout;
+  animation: fadeout;
+  animation-duration: 1s;
+  animation-fill-mode: forwards; }
+
+.fadein {
+  -webkit-animation: fadein;
+  -moz-animation: fadein;
+  -o-animation: fadein;
+  animation: fadein;
+  animation-duration: 1s;
+  animation-fill-mode: forwards; }
+
+.start {
+  width: 100vw;
+  font-family: "Helvetica";
+  font-size: 5.1vw;
+  text-shadow: 0 0.15em 0.3em #00000029;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  position: absolute;
+  top: 71.5vh;
+  z-index: 5; }
+
+.form {
+  opacity: 0;
+  width: 52vw;
+  font-family: "Gen-M";
+  font-size: 5vw;
+  position: absolute;
+  top: 66.5vh;
+  left: 23vw;
+  z-index: 5; }
+
+.form_blank {
+  width: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 600;
+  text-align: center;
+  padding: 1.1vh 1vw 1.1vh 1vw;
+  margin: 0 0 3vh 0;
+  display: block;
+  background-color: #FFFFFF;
+  border-radius: 6vw; }
+
+.blank_title {
+  width: 20vw;
+  display: inline;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 600;
+  color: #2E5338;
+  text-align: center; }
+
+.blank_input {
+  width: 32vw;
+  border-style: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: #2E5338;
+  text-align: center;
+  background-color: transparent; }
+
+.blank_input:focus {
+  border-style: none;
+  outline: none; }
+
+.form_signinbtn {
+  width: 20vw;
+  display: inline-block;
+  font-size: 0.65em;
+  font-weight: 100;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 0.5vh 0;
+  margin: 0 16.5vw 1.5vh 16.5vw;
+  background-color: #90AF89;
+  border: 0.5vw solid #FFFFFF;
+  border-radius: 5vw; }
+
+.form_option {
+  display: inline-block;
+  font-size: 0.65em;
+  font-weight: 100;
+  color: #FFFFFF; }
+
+.option--forget {
+  margin: 0 0 0 8vw; }
+
+.option--seperate {
+  margin: 0 3vw; }
