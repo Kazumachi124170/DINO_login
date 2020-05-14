@@ -1,9 +1,10 @@
 $(document).ready(function () {
   var stage=0
+  var typeing=false;
   $("form").hide()
   $("body").click(function(){
-    console.log("TOUCH TO START")
     if(stage==0){
+      console.log("TOUCH TO START")
       $(".start").toggleClass("fadeout")
       setTimeout(() => {
         $(".start").hide()
@@ -15,10 +16,33 @@ $(document).ready(function () {
 
     }
     
-
   });
 
+  // Float things up while typing
+ // $("input").focus(function(){
+ //   console.log("I'm typing")  
+ //   $(".LOGO").toggleClass("LOGO--floatup")
+ //   $(".LOGO_back").toggleClass("LOGO_back--floatup")
+ //   $(".Pterodactyl").toggleClass("Pterodactyl--floatup")
+ //   $(".leaf_R1-1").toggleClass("leaf_R1-1--floatup")
+ //   $(".leaf_R2-2").toggleClass("leaf_R2-2--floatup")
+ //   $(".bigleaf_back").toggleClass("bigleaf_back--floatup")
+ //   $(".bigleaf_front").toggleClass("bigleaf_front--floatup")
+ //   $(".egg").toggleClass("egg--floatup")
+ // });
 
+ // // Float things down while not typing
+ // $("input").focusout(function(){
+ //   console.log("I'm typing")  
+ //   $(".LOGO").toggleClass("LOGO--floatup")
+ //   $(".LOGO_back").toggleClass("LOGO_back--floatup")
+ //   $(".Pterodactyl").toggleClass("Pterodactyl--floatup")
+ //   $(".leaf_R1-1").toggleClass("leaf_R1-1--floatup")
+ //   $(".leaf_R2-2").toggleClass("leaf_R2-2--floatup")
+ //   $(".bigleaf_back").toggleClass("bifleaf_back--floatup")
+ //   $(".bigleaf_front").toggleClass("bigleaf_front--floatup")
+ //   $(".egg").toggleClass("egg--floatup")
+ // });
 
   $('#typein button[type="submit"]').click(event => {
     event.preventDefault();

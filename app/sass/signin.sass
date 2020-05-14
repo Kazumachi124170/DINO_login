@@ -1,47 +1,7 @@
 @import all
 @import fonts
 @import background
-
-//@mixin for keyframe
-=keyframes($name)
-  @-webkit-keyframes #{$name}
-    @content
-  @-moz-keyframes #{$name}
-    @content
-  @-ms-keyframes #{$name}
-    @content
-  @keyframes #{$name}
-    @content
-
-//@mixin for animation
-=animation($content)
-  -webkit-animation: $content
-  -moz-animation: $content
-  -o-animation: $content
-  animation: $content
-
-+keyframes(fadein)
-  from
-    opacity: 0
-  to
-    opacity: 1
-
-+keyframes(fadeout)
-  from
-    opacity: 1
-  to
-    opacity: 0
-
-.fadeout
-  +animation(fadeout)
-  animation-duration: 1s
-  animation-fill-mode: forwards  
-
-.fadein
-  +animation(fadein)
-  animation-duration: 1s
-  animation-fill-mode: forwards
-  
+@import animation 
 
 .start
   width: 100vw
@@ -53,17 +13,17 @@
   color: #FFFFFF
   position: absolute
   top: 71.5vh
-  z-index: 5
+  z-index: 10
 
 .form
-  opacity: 0
+  opacity: 1
   width: 52vw
   font-family: "Gen-M"
   font-size: 5vw
   position: absolute
   top: 66.5vh
   left: 23vw
-  z-index: 5
+  z-index: 10
 
 .form_blank
   width: inherit

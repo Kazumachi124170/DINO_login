@@ -3,6 +3,7 @@
   <head>
     <title>LOG IN</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no">
     <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
     <script src="http://code.jquery.com/jquery-3.3.1.min.js">   </script>
@@ -10,7 +11,7 @@
     <link href="http://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js">
   </head>
   <body>
-    <p class="start">TOUCH TO START</p>
+    <p class="start">TOUCH TO START?</p>
     <form class="form form--signin">
       <div class="form_blank blank--name">
         <p class="blank_title">帳號</p>
@@ -18,7 +19,7 @@
       </div>
       <div class="form_blank blank--pwd">
         <p class="blank_title">密碼</p>
-        <input class="blank_input input--pwd" type="pwd" name="pwd">
+        <input class="blank_input input--pwd" id="test" type="pwd" name="pwd">
       </div>
       <p class="form_signinbtn">登入</p>
       <p class="form_option option--forget">忘記密碼? </p>
